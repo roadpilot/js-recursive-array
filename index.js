@@ -4,7 +4,9 @@
  */
 
 function capitalizeFirst(arr){
-  console.log(arr)
+  for (i=0; i<arr.length; i++){
+    console.log(arr[i])
+  }
 }
 
 capitalizeFirst(['car','taco','banana'])
