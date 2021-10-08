@@ -3,11 +3,12 @@
  // capitalizeFirst(['car','taco','banana']); // ['Car','Taco','Banana']
  */
 
-function capitalizeFirst(arr){
-  for (i=0; i<arr.length; i++){
-    arr[i]=arr[i][0].toUpperCase()+arr[i].slice(1)
-  }
-  console.log(arr)
+function capitalizeFirst(arr, i=0){
+  // for (i=0; i<arr.length; i++){
+    if (i>arr.length-1){return arr}
+    arr[i] = arr[i][0].toUpperCase() + arr[i].slice(1)
+  // }
+  return (capitalizeFirst(arr,i+1))
 }
 
 
